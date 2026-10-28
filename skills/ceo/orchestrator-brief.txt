@@ -1,0 +1,109 @@
+YOUR AI CEO: THE ORCHESTRATOR
+The router at the top of your AI company. Build it first, so every
+executive you add has someone to report to. Test it last, once it has
+executives to route to.
+
+Your COO, CFO, CMO, CSO, CRO, CTO, and CCO will all report to it. You
+are the owner. You tell the CEO what you need and it picks the route.
+
+------------------------------------------------------------------
+STEP 1. BUILD THE CEO
+------------------------------------------------------------------
+
+Paste this into the PromptAnything chat box:
+
+Build an orchestrator skill for my AI operating system. It is the CEO
+of my AI company. My COO, CFO, CMO, CSO, CRO, CTO, and CCO will report
+to it, and each of them will have agents under them. When I make a
+request, work
+out what I am trying to accomplish, then choose the most direct route
+through my executives and their agents to complete it, whatever the
+task is.
+
+------------------------------------------------------------------
+THEN, IN PROMPTANYTHING
+------------------------------------------------------------------
+
+1. Click the blue button at the bottom right to go to the next stage.
+2. It should choose agent or skill. Push next.
+3. You are on the main prompt builder. Fill in your profile once from
+   the navigation menu and every prompt you build will use it.
+4. Under advanced settings, set temperature closer to zero. Routing is a
+   precision job, not a creative one.
+5. Click refine prompt. Read every clarifying question and fix any
+   answer that is off. Anything in brackets means the AI was not sure,
+   usually because your profile is still empty.
+6. Click generate prompt, then copy it.
+
+------------------------------------------------------------------
+THEN, IN VS CODE
+------------------------------------------------------------------
+
+Type this and paste the generated prompt after it:
+
+  Create a new skill in my .agent/skills folder called orchestrator.md
+  that does this. Every executive I add later reports to it:
+  <paste your prompt>
+
+Hold off on testing. Build your executives next, then come back.
+
+------------------------------------------------------------------
+STEP 2. AFTER YOUR EXECUTIVES, BUILD ITS AGENTS
+------------------------------------------------------------------
+
+These three report straight to the CEO because they pull from every
+seat, so build them once your executives are in place. Run each one
+through PromptAnything the same way. Then in VS Code:
+
+  Create a new skill in .agent/skills/ that reports to my orchestrator
+  and does this:
+  <paste your prompt>
+
+MORNING BRIEF
+
+Build a morning brief skill that reports to my orchestrator. Each
+morning it asks each of my executives for their update: what came in,
+what is due, and what needs me. It turns them into one page I can read
+in two minutes, with the three things that need me today at the top.
+
+WEEKLY PRIORITIES
+
+Build a weekly priorities skill that reports to my orchestrator. Every
+Monday it looks at my goals, my pipeline, my cash, and my projects,
+then picks the three moves that will matter most this week and explains
+why in one line each. It also tells me what to say no to.
+
+INVESTOR UPDATE
+
+Build an investor update skill that reports to my orchestrator. Once a
+month it pulls the real numbers from my CFO and CRO, plus wins and
+problems from my other executives, and drafts a short update for my
+investors, partners, or board: highlights, numbers, challenges, and
+asks. It never makes up a number, and I approve it before it goes out.
+
+------------------------------------------------------------------
+TEST IT LAST
+------------------------------------------------------------------
+
+Once your executives are built, the CEO has somewhere to send work.
+Ask it:
+
+  What should I focus on this week?
+
+Watch which executives it pulls in. If it picks the wrong one, tell it
+why and ask it to update its own routing rules.
+
+------------------------------------------------------------------
+HOW IT SHOULD THINK
+------------------------------------------------------------------
+
+  A money question      -> CFO -> Bookkeeper or Cash Forecast
+  A sales call tomorrow -> CSO -> Lead Researcher
+  A new post            -> CMO -> Content Engine -> Brand Kit
+  A new client signed   -> CCO -> Client Onboarding
+
+Every job gets its own skill. That keeps each one focused, so the work
+comes back sharper and you spend less on tokens.
+
+------------------------------------------------------------------
+Built at aiosb2b.netlify.app · Bishop AI
