@@ -1,0 +1,240 @@
+{
+  "version": 2,
+  "layout": "b2b",
+  "course": "https://aiosb2b.netlify.app/",
+  "owner": "YOUR_NAME",
+  "default_router": "ceo",
+  "skills": [
+    {
+      "name": "ceo",
+      "path": "skills/ceo/SKILL.md",
+      "reports_to": null,
+      "title": "CEO Orchestrator (ACRONYM)",
+      "alias": "skills/orchestrator.md"
+    },
+    {
+      "name": "orchestrator",
+      "path": "skills/orchestrator.md",
+      "reports_to": null,
+      "alias": "skills/ceo/SKILL.md",
+      "title": "CEO Orchestrator (ACRONYM)"
+    },
+    {
+      "name": "skill-builder",
+      "path": "skills/skill_builder.md",
+      "reports_to": "ceo"
+    },
+    {
+      "name": "admin-assistant",
+      "path": "skills/coo/agents/admin-assistant.md",
+      "reports_to": "coo",
+      "alias": "skills/admin_assistant.md",
+      "status": "full-brief"
+    },
+    {
+      "name": "go-to-market",
+      "path": "skills/cro/agents/go-to-market.md",
+      "reports_to": "cro",
+      "alias": "skills/go_to_market.md",
+      "status": "full-brief"
+    },
+    {
+      "name": "coo",
+      "path": "skills/coo/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Operating Officer",
+      "brief": "~/AI-OS/downloads/b2b/coo.txt",
+      "agents": [
+        "admin-assistant",
+        "sop-writer",
+        "project-tracker"
+      ]
+    },
+    {
+      "name": "coo/sop-writer",
+      "path": "skills/coo/agents/sop-writer.md",
+      "reports_to": "coo",
+      "status": "scaffold"
+    },
+    {
+      "name": "coo/project-tracker",
+      "path": "skills/coo/agents/project-tracker.md",
+      "reports_to": "coo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cfo",
+      "path": "skills/cfo/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Financial Officer",
+      "brief": "~/AI-OS/downloads/b2b/cfo.txt",
+      "agents": [
+        "bookkeeper",
+        "invoice-chaser",
+        "cash-forecast"
+      ]
+    },
+    {
+      "name": "cfo/bookkeeper",
+      "path": "skills/cfo/agents/bookkeeper.md",
+      "reports_to": "cfo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cfo/invoice-chaser",
+      "path": "skills/cfo/agents/invoice-chaser.md",
+      "reports_to": "cfo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cfo/cash-forecast",
+      "path": "skills/cfo/agents/cash-forecast.md",
+      "reports_to": "cfo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cmo",
+      "path": "skills/cmo/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Marketing Officer",
+      "brief": "~/AI-OS/downloads/b2b/cmo.txt",
+      "agents": [
+        "content-engine",
+        "brand-kit",
+        "competitor-watch"
+      ]
+    },
+    {
+      "name": "cmo/content-engine",
+      "path": "skills/cmo/agents/content-engine.md",
+      "reports_to": "cmo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cmo/brand-kit",
+      "path": "skills/cmo/agents/brand-kit.md",
+      "reports_to": "cmo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cmo/competitor-watch",
+      "path": "skills/cmo/agents/competitor-watch.md",
+      "reports_to": "cmo",
+      "status": "scaffold"
+    },
+    {
+      "name": "cso",
+      "path": "skills/cso/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Sales Officer",
+      "brief": "~/AI-OS/downloads/b2b/cso.txt",
+      "agents": [
+        "lead-researcher",
+        "proposal-writer",
+        "cold-outreach"
+      ]
+    },
+    {
+      "name": "cso/lead-researcher",
+      "path": "skills/cso/agents/lead-researcher.md",
+      "reports_to": "cso",
+      "status": "scaffold"
+    },
+    {
+      "name": "cso/proposal-writer",
+      "path": "skills/cso/agents/proposal-writer.md",
+      "reports_to": "cso",
+      "status": "scaffold"
+    },
+    {
+      "name": "cso/cold-outreach",
+      "path": "skills/cso/agents/cold-outreach.md",
+      "reports_to": "cso",
+      "status": "full-brief"
+    },
+    {
+      "name": "cro",
+      "path": "skills/cro/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Revenue Officer",
+      "brief": "~/AI-OS/downloads/b2b/cro.txt",
+      "agents": [
+        "go-to-market",
+        "pipeline-review",
+        "upsell-spotter"
+      ]
+    },
+    {
+      "name": "cro/pipeline-review",
+      "path": "skills/cro/agents/pipeline-review.md",
+      "reports_to": "cro",
+      "status": "scaffold"
+    },
+    {
+      "name": "cro/upsell-spotter",
+      "path": "skills/cro/agents/upsell-spotter.md",
+      "reports_to": "cro",
+      "status": "scaffold"
+    },
+    {
+      "name": "cto",
+      "path": "skills/cto/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Technology Officer",
+      "brief": "~/AI-OS/downloads/b2b/cto.txt",
+      "agents": [
+        "website-builder",
+        "automation-builder",
+        "tool-stack-audit"
+      ]
+    },
+    {
+      "name": "cto/website-builder",
+      "path": "skills/cto/agents/website-builder.md",
+      "reports_to": "cto",
+      "status": "full-brief"
+    },
+    {
+      "name": "cto/automation-builder",
+      "path": "skills/cto/agents/automation-builder.md",
+      "reports_to": "cto",
+      "status": "scaffold"
+    },
+    {
+      "name": "cto/tool-stack-audit",
+      "path": "skills/cto/agents/tool-stack-audit.md",
+      "reports_to": "cto",
+      "status": "scaffold"
+    },
+    {
+      "name": "cco",
+      "path": "skills/cco/SKILL.md",
+      "reports_to": "ceo",
+      "title": "Chief Customer Officer",
+      "brief": "~/AI-OS/downloads/b2b/cco.txt",
+      "agents": [
+        "client-onboarding",
+        "support-desk",
+        "reviews-and-feedback"
+      ]
+    },
+    {
+      "name": "cco/client-onboarding",
+      "path": "skills/cco/agents/client-onboarding.md",
+      "reports_to": "cco",
+      "status": "scaffold"
+    },
+    {
+      "name": "cco/support-desk",
+      "path": "skills/cco/agents/support-desk.md",
+      "reports_to": "cco",
+      "status": "scaffold"
+    },
+    {
+      "name": "cco/reviews-and-feedback",
+      "path": "skills/cco/agents/reviews-and-feedback.md",
+      "reports_to": "cco",
+      "status": "scaffold"
+    }
+  ]
+}

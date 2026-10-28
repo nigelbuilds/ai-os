@@ -1,0 +1,13 @@
+{
+  "owner": "YOUR_NAME",
+  "company": "YOUR_COMPANY",
+  "timezone": "America/New_York",
+  "location": "YOUR_CITY",
+  "notes": [
+    "Owner talks to the CEO/orchestrator skill first.",
+    "Every outbound email stays a draft until the owner approves.",
+    "Keep business and personal work separated.",
+    "B2B layout: CCO = Chief Customer Officer (onboarding, support, reviews), not Compliance."
+  ],
+  "updated": "2026-10-27"
+}

@@ -1,0 +1,19 @@
+*{box-sizing:border-box}body{margin:0;font:14px/1.5 -apple-system,system-ui,sans-serif;background:#0d1117;color:#e6edf3}
+header{display:flex;justify-content:space-between;align-items:center;padding:14px 24px;border-bottom:1px solid #21262d}
+h1{margin:0;font-size:20px}h1 span{color:#8b949e;font-weight:400}#meta{color:#8b949e;font-size:12px}
+main{display:grid;grid-template-columns:minmax(380px,1fr) 1.2fr;height:calc(100vh - 60px)}
+#left{overflow:auto;padding:20px;border-right:1px solid #21262d}#right{overflow:auto;padding:20px}
+.talk{background:#161b22;border:1px solid #30363d;border-radius:12px;padding:14px;margin-bottom:20px}
+.talk h2{margin:0 0 4px;font-size:15px}.talk p{margin:0 0 8px;color:#8b949e;font-size:12px}
+textarea{width:100%;height:64px;background:#0d1117;color:#e6edf3;border:1px solid #30363d;border-radius:8px;padding:8px;font:inherit}
+button{margin-top:8px;background:#238636;color:#fff;border:0;border-radius:8px;padding:6px 14px;cursor:pointer}
+.ceo{text-align:center}.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:8px 12px;cursor:pointer;transition:.15s}
+.card:hover,.card.active{border-color:#58a6ff;background:#1c2330}.ceo .card{display:inline-block;border-color:#a371f7;font-weight:600;padding:12px 24px}
+.execs{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin-top:16px}
+.exec{background:#11161d;border:1px solid #21262d;border-radius:12px;padding:10px}.exec>.card{font-weight:600;border-color:#3fb950}
+.agents{display:flex;flex-direction:column;gap:6px;margin-top:8px}.agents .card{font-size:13px}
+.tag{font-size:10px;padding:1px 6px;border-radius:8px;margin-left:6px;background:#30363d;color:#8b949e}.tag.full{background:#1f6feb;color:#fff}
+.other{margin-top:16px}.other .card{display:inline-block;margin:4px}
+#viewhead{color:#8b949e;margin-bottom:10px;font-family:ui-monospace,monospace;font-size:12px}
+#view h1,#view h2,#view h3{border-bottom:1px solid #21262d;padding-bottom:4px}#view code{background:#161b22;padding:1px 4px;border-radius:4px}
+#view pre{background:#161b22;padding:10px;border-radius:8px;overflow:auto}#view a{color:#58a6ff}
